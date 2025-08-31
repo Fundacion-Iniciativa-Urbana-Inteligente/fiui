@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Fundación Iniciativa Urbana Inteligente</title>
+    <meta name="description" content="FIUI — Fundación Iniciativa Urbana Inteligente. DAO sin fines de lucro en Argentina. Donaciones, proyectos y aliados." />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --brand: #4c6ef5;
+        --ink: #0b1324;
+        --muted: #667085;
+        --radius: 16px;
+      }
+      body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; color: var(--ink); }
+      h1, h2, h3 { letter-spacing: -0.02em; }
+      h2.section-title { font-size: 1.65rem; font-weight: 700; margin-bottom: 0.75rem; }
+      .section-sub { color: var(--muted); margin: 0 0 1.5rem; }
+      .content { max-width: 980px; }
+      .button.primary { background: var(--brand); border: none; }
+      .button.primary:hover { filter: brightness(0.95); }
+      .pill { display:inline-block; padding: 0.35rem 0.7rem; border-radius: 999px; background: rgba(76,110,245,.12); color: var(--brand); font-weight: 600; font-size: .9rem; }
+
+      .card {
+        background: #fff; border-radius: var(--radius); padding: 1.25rem 1.25rem; box-shadow: 0 8px 30px rgba(2, 6, 23, .08);
+      }
+      .grid-2 { display: grid; grid-template-columns: 1.4fr 1fr; gap: 2rem; align-items: center; }
+      @media (max-width: 980px) { .grid-2 { grid-template-columns: 1fr; } }
+
+      .feature-icons { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 0.75rem; }
+      .feature-icons li { list-style: none; padding-left: 0; }
+
+      .logos-wrap { position: relative; overflow: hidden; border-radius: var(--radius); background: #fff; }
+      .logos-fade { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, #fff 0%, transparent 8%, transparent 92%, #fff 100%); }
+      .logos-track { display: flex; gap: 3rem; padding: 1.25rem 1.25rem; width: max-content; will-change: transform; animation: slide 25s linear infinite; }
+      .logos-track img { height: 68px; width: auto; object-fit: contain; filter: grayscale(20%); opacity: 0.9; transition: transform .2s ease, opacity .2s ease, filter .2s ease; }
+      .logos-track img:hover { transform: translateY(-2px) scale(1.03); opacity: 1; filter: none; }
+      @keyframes slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+      @media (max-width: 640px) { .logos-track img { height: 54px; } }
+      @media (prefers-reduced-motion: reduce) { .logos-track { animation: none; } }
+
+      /* Pausa al pasar el mouse */
+      .logos-wrap:hover .logos-track { animation-play-state: paused; }
+
+      .copyright { text-align:center; color: var(--muted); }
+      .intro .image.fill img { filter: saturate(1.05) contrast(1.02); }
+      section > header { margin-bottom: 0.25rem; }
+    </style>
+  </head>
+  <body class="is-preload">
+    <div id="wrapper">
+
+      <!-- Intro -->
+      <section class="intro" id="inicio">
+        <header>
+          <span class="pill">FIUI</span>
+          <h1 style="margin: .5rem 0 0">Fundación Iniciativa Urbana Inteligente</h1>
+          <p class="section-sub">La primera DAO sin fines de lucro legalmente constituida en Argentina.</p>
+          <ul class="actions">
+            <li><a href="#donar-ar" class="arrow scrolly"><span class="label">Continuar</span></a></li>
+          </ul>
+        </header>
+        <div class="content grid-2">
+          <div>
+            <div class="card">
+              <h2 class="section-title">Nuestra misión</h2>
+              <p>Impulsamos movilidad sostenible, tecnología cívica y ciudades inteligentes. Construimos comunidad y transparencia mediante gobernanza DAO.</p>
+              <ul class="feature-icons">
+                <li class="icon solid fa-bicycle">Micromovilidad con IoT</li>
+                <li class="icon solid fa-leaf">Impacto climático medible</li>
+                <li class="icon solid fa-users">Gobernanza abierta</li>
+              </ul>
+            </div>
+          </div>
+          <span class="image fill" data-position="center"><img src="images/pic01.png" alt="Personas utilizando bicicletas compartidas en la ciudad" /></span>
+        </div>
+      </section>
+
+      <!-- Donar en Argentina -->
+      <section id="donar-ar">
+        <header>
+          <h2 class="section-title">Doná en Argentina (Mercado Pago)</h2>
+          <p class="section-sub">Preferimos transferencias vía alias <strong>fiui.org.ar</strong>. Solicitá tu factura deducible de Ganancias en <a href="mailto:facturacion@fiui.org.ar">facturacion@fiui.org.ar</a>.</p>
+        </header>
+        <div class="content card">
+          <ul class="actions">
+            <li>
+              <a href="https://link.mercadopago.com.ar/fiui" target="_blank" rel="noopener" class="button primary large" title="Donación única">Donación única</a>
+            </li>
+            <li>
+              <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=e18e03bed2d7480e8caa43f260efa655" target="_blank" rel="noopener" class="button primary large" title="Suscripción mensual">Suscripción mensual</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Donar desde el exterior -->
+      <section id="donar-exterior">
+        <header>
+          <h2 class="section-title">Doná desde el exterior (Goodstack)</h2>
+          <p class="section-sub">Disponible para donantes en EE.UU., India, Reino Unido y Australia.</p>
+        </header>
+        <div class="content card">
+          <p>Estamos integrando un gateway de donaciones con recibos aptos para beneficios fiscales según la jurisdicción del donante.</p>
+          <a href="https://jinete-ar.web.app/" class="button primary large" target="_blank" rel="noopener">Pronto</a>
+        </div>
+      </section>
+
+      <!-- Donar dispositivos -->
+      <section id="donar-dispositivos">
+        <header>
+          <h2 class="section-title">Doná un dispositivo (lo reciclamos)</h2>
+          <p class="section-sub">Dales una segunda vida en nuestra red de movilidad.</p>
+        </header>
+        <div class="content card">
+          <p><strong>Jinete.ar</strong> es una plataforma integral de movilidad urbana con bicicletas <em>upcycled</em> y dispositivos con GPS, compartidas desde nuestra app.</p>
+          <ul class="feature-icons">
+            <li class="icon solid fa-bicycle">Dispositivos integrados con GPS</li>
+            <li class="icon solid fa-mobile-alt">Desbloqueo por app o QR</li>
+            <li class="icon solid fa-recycle">Economía circular</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Hacete socio -->
+      <section id="hacete-socio">
+        <header>
+          <h2 class="section-title">Hacete socia/o</h2>
+          <p class="section-sub">Reclamá tu token $JINETE y participá de la gobernanza DAO.</p>
+        </header>
+        <div class="content card">
+          <ul class="feature-icons">
+            <li class="icon brands fa-github">
+              <a href="https://github.com/Fundacion-Iniciativa-Urbana-Inteligente/fiui/" target="_blank" rel="noopener">Ver proyecto en GitHub</a>
+            </li>
+            <li class="icon solid fa-flag-checkered"><strong>Lanzamiento</strong>: 2027</li>
+          </ul>
+          <a href="https://jinete-ar.web.app/registro" target="_blank" rel="noopener" class="button primary large">Registrate</a>
+        </div>
+      </section>
+
+      <!-- Aliados -->
+      <section id="aliados">
+        <header>
+          <h2 class="section-title">Confían en nosotros</h2>
+          <p class="section-sub">Alianzas y entidades que acompañan la iniciativa.</p>
+        </header>
+        <div class="content">
+          <div class="logos-wrap card" aria-label="Carrusel de logos de aliados">
+            <div class="logos-fade" aria-hidden="true"></div>
+            <div class="logos-track">
+              <img src="images/piip.jpg" alt="PIIP" />
+              <img src="images/sunra.jpg" alt="Sunra" />
+              <img src="images/CC.png" alt="Cámara de Comercio" />
+              <img src="images/simi.svg" alt="SIMI" />
+              <img src="images/sup.jpeg" alt="Supervisión Municipal" />
+              <img src="images/Apostoles.jpg" alt="Municipalidad de Apóstoles" />
+              <img src="images/piip.jpg" alt="PIIP" />
+              <img src="images/sunra.jpg" alt="Sunra" />
+              <img src="images/CC.png" alt="Cámara de Comercio" />
+              <img src="images/simi.svg" alt="SIMI" />
+              <img src="images/sup.jpeg" alt="Supervisión Municipal" />
+              <img src="images/Apostoles.jpg" alt="Municipalidad de Apóstoles" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="copyright">&copy; Fundación Iniciativa Urbana Inteligente. Visitá nuestras redes — <a href="https://www.instagram.com/jinete.ar/" target="_blank" rel="noopener">@jinete.ar</a>.</div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

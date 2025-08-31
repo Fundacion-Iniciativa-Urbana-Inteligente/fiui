@@ -3,7 +3,7 @@
 [fiui.org.ar](https://www.fiui.org.ar) --- Static landing page of FIUI
 to showcase projects (e.g., Jinete.ar), donations, press, and contact.
 
-> Theme: **Paradigm Shift** by HTML5 UP (CC BY 3.0). See credits below.\
+> 👉 More details in [HOT_WALLET.md](docs/HOT_WALLET.md).\
 > Recommended hosting: **Firebase Hosting** (this repo already includes
 > `firebase.json`).
 
